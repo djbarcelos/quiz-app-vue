@@ -26,7 +26,8 @@
     <transition name="nested" duration="350" appear>
       <div class="card outer" v-show="!gameState">
         <div class="inner">
-          Você acertou {{ hits }} perguntas de um total {{ hits + misses }}.
+          Você fez um total de {{ hits }} acertos em
+          {{ hits + misses }} perguntas.
         </div>
         <button class="btn-game inner" @click="startGame">JOGAR</button>
       </div>
